@@ -1,0 +1,267 @@
+{
+	"info": {
+		"_postman_id": "d9b77c52-8436-4cf6-b4cf-9edf8f9be2c3",
+		"name": "cvc",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Agendar Transferência Tipo A",
+			"item": [
+				{
+					"name": "Agendar Transferencia A",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"contaOrigem\": \"12345-1\",\r\n    \"contaDestino\": \"12345-2\",\r\n    \"valor\": \"10.00\",\r\n    \"dataTransferencia\": \"2021-06-19\",\r\n    \"dataAgendamento\": \"2021-06-19\"\r\n\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8095/cvcapi/agendartransferencia",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8095",
+							"path": [
+								"cvcapi",
+								"agendartransferencia"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Agendar Transferência Tipo B",
+			"item": [
+				{
+					"name": "Agendar Transferencia B",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"contaOrigem\": \"12345-1\",\r\n    \"contaDestino\": \"12345-2\",\r\n    \"valor\": \"10.00\",\r\n    \"dataTransferencia\": \"2021-06-19\",\r\n    \"dataAgendamento\": \"2021-06-22\"\r\n\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8095/cvcapi/agendartransferencia",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8095",
+							"path": [
+								"cvcapi",
+								"agendartransferencia"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Agendar Transferência Tipo C",
+			"item": [
+				{
+					"name": "Agendar Transferencia C Acima de 10 até 20",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"contaOrigem\": \"12345-1\",\r\n    \"contaDestino\": \"12345-2\",\r\n    \"valor\": \"10.00\",\r\n    \"dataTransferencia\": \"2021-06-19\",\r\n    \"dataAgendamento\": \"2021-06-30\"\r\n\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8095/cvcapi/agendartransferencia",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8095",
+							"path": [
+								"cvcapi",
+								"agendartransferencia"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Agendar Transferencia C Acima de 20 até 30",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"contaOrigem\": \"12345-1\",\r\n    \"contaDestino\": \"12345-2\",\r\n    \"valor\": \"10.00\",\r\n    \"dataTransferencia\": \"2021-06-19\",\r\n    \"dataAgendamento\": \"2021-07-01\"\r\n\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8095/cvcapi/agendartransferencia",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8095",
+							"path": [
+								"cvcapi",
+								"agendartransferencia"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Agendar Transferencia C Acima de 30 até 40",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"contaOrigem\": \"12345-1\",\r\n    \"contaDestino\": \"12345-2\",\r\n    \"valor\": \"10.00\",\r\n    \"dataTransferencia\": \"2021-06-19\",\r\n    \"dataAgendamento\": \"2021-07-11\"\r\n\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8095/cvcapi/agendartransferencia",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8095",
+							"path": [
+								"cvcapi",
+								"agendartransferencia"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Agendar Transferencia C Acima de 40 e Valor Superior",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"contaOrigem\": \"12345-1\",\r\n    \"contaDestino\": \"12345-2\",\r\n    \"valor\": \"100.001\",\r\n    \"dataTransferencia\": \"2021-06-19\",\r\n    \"dataAgendamento\": \"2021-07-30\"\r\n\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8095/cvcapi/agendartransferencia",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8095",
+							"path": [
+								"cvcapi",
+								"agendartransferencia"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Agendar Transferencia C Acima de 40 e Valor Inferior",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"contaOrigem\": \"12345-1\",\r\n    \"contaDestino\": \"12345-2\",\r\n    \"valor\": \"10.00\",\r\n    \"dataTransferencia\": \"2021-06-19\",\r\n    \"dataAgendamento\": \"2021-07-30\"\r\n\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8095/cvcapi/agendartransferencia",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8095",
+							"path": [
+								"cvcapi",
+								"agendartransferencia"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Consultar Transferencias",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8095/cvcapi/consultaagendamentotransferencia",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8095",
+					"path": [
+						"cvcapi",
+						"consultaagendamentotransferencia"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
